@@ -1,0 +1,4 @@
+ja:
+  label_basic_auth_user_name: ユーザー名
+  label_basic_auth_password: パスワード
+  label_basic_auth_require_auth: Basic認証を行う

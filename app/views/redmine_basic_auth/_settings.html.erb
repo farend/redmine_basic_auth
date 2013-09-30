@@ -1,0 +1,12 @@
+<p>
+  <label for="settings_enabled"><%= l(:label_basic_auth_require_auth) %></label>
+  <%= check_box_tag 'settings[enabled]', 1, @settings['enabled'].to_i != 0 %>
+</p>
+<p>
+  <label for="setting_user_name"><%= l(:label_basic_auth_user_name) %></label>
+  <%= text_field_tag 'settings[user_name]', @settings['user_name'] %>
+</p>
+<p>
+  <label for="setting_password"><%= l(:label_basic_auth_password) %></label>
+  <%= text_field_tag 'settings[password]', @settings['password'] %>
+</p>

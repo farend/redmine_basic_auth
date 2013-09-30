@@ -1,0 +1,4 @@
+en:
+  label_basic_auth_user_name: User name
+  label_basic_auth_password: Password
+  label_basic_auth_require_auth: Require Basic Authentication
