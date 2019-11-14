@@ -2,7 +2,7 @@ Redmine::Plugin.register :redmine_basic_auth do
   name 'Redmine Basic Auth plugin'
   author 'Far End Technologies Corporation'
   description ''
-  version '0.0.1'
+  version '0.0.2'
   url ''
   author_url 'http://www.farend.co.jp/'
 
