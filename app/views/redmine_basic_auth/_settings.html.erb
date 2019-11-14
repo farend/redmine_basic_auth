@@ -4,9 +4,9 @@
 </p>
 <p>
   <label for="setting_user_name"><%= l(:label_basic_auth_user_name) %></label>
-  <%= text_field_tag 'settings[user_name]', @settings['user_name'] %>
+  <%= text_field_tag 'settings[user_name]', @settings['user_name'], :pattern => '[\x21-\x7E]*' %>
 </p>
 <p>
   <label for="setting_password"><%= l(:label_basic_auth_password) %></label>
-  <%= text_field_tag 'settings[password]', @settings['password'] %>
+  <%= text_field_tag 'settings[password]', @settings['password'], :pattern => '[\x21-\x7E]*' %>
 </p>
