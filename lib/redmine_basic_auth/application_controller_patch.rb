@@ -17,8 +17,8 @@ module RedmineBasicAuth
     def require_basic_auth
       return true if Setting.plugin_redmine_basic_auth['enabled'].to_i == 0
       authenticate_or_request_with_http_basic(REALM) do |user_name, password|
-        user_name == Setting.plugin_redmine_basic_auth['user_name'] &&
-        password == Setting.plugin_redmine_basic_auth['password']
+        ActiveSupport::SecurityUtils.secure_compare(user_name, Setting.plugin_redmine_basic_auth['user_name']) &
+        ActiveSupport::SecurityUtils.secure_compare(password, Setting.plugin_redmine_basic_auth['password'])
       end
     end
   end
